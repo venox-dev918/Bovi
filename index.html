@@ -1,0 +1,89 @@
+  .buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: #ff8a00;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ff3b1f;
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 60px 20px;
+            background: #111;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1b1b1b;
+            border: 1px solid #ff8a00;
+            border-radius: 12px;
+            padding: 25px;
+            width: 220px;
+        }
+
+        .card h3 {
+            color: #ff8a00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>BOVI</h1>
+        <p class="slogan">Ton oiseau, ton ami, ton bot.</p>
+
+        <div class="buttons">
+            <a class="btn" href="#">Ajouter Bovi</a>
+            <a class="btn" href="#">Serveur support</a>
+            <a class="btn" href="#commandes">Voir les commandes</a>
+        </div>
+    </div>
+
+    <div class="section" id="commandes">
+        <h2>Commandes principales</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🛡️ Modération</h3>
+                <p>!clear, !kick, !ban, !warn</p>
+            </div>
+
+            <div class="card">
+                <h3>ℹ️ Informations</h3>
+                <p>!serverinfo, !userinfo, !avatar</p>
+            </div>
+
+            <div class="card">
+                <h3>🎮 Fun</h3>
+                <p>!de, !ball, !pileouface</p>
+            </div>
+
+            <div class="card">
+                <h3>👋 Événements</h3>
+                <p>Bienvenue, au revoir, rôle auto</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
