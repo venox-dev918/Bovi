@@ -80,8 +80,55 @@
         }
 
         .card h3 {
-            color: #ff8a00;
-        }
+    color: #ff8a00;
+}
+
+.why {
+    padding: 70px 20px;
+    background: #0e0e0e;
+}
+
+.why h2 {
+    font-size: 36px;
+    color: #ff8a00;
+    margin-bottom: 15px;
+}
+
+.why-text {
+    color: #f5e6d0;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.why-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    background: #1b1b1b;
+    border: 1px solid #ff8a00;
+    border-radius: 14px;
+    padding: 25px;
+    width: 250px;
+    transition: 0.2s;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff8a00;
+}
+
+.why-card h3 {
+    color: #ff8a00;
+}
+
+.why-card p {
+    color: #ddd;
+}
+        
     </style>
 </head>
 
@@ -93,11 +140,36 @@
 
         <div class="buttons">
     <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1516770240929726474&permissions=8&integration_type=0&scope=applications.commands+bot" target="_blank">Ajouter Bovi</a>
-    <a class="btn" href="https://discord.gg/WU2StEpNuw">Serveur support</a>
+    <a class="btn" href="https://discord.gg/WU2StEpNuw" target="_blank">Serveur support</a>
     <a class="btn" href="#commandes">Voir les commandes</a>
 </div>
     </div>
+<div class="why">
+    <h2>Pourquoi utiliser Bovi ?</h2>
+    <p class="why-text">Un bot simple, pratique et stylé pour gérer ton serveur Discord.</p>
 
+    <div class="why-cards">
+        <div class="why-card">
+            <h3>🛡️ Modération simple</h3>
+            <p>Gère ton serveur avec des commandes comme !clear, !kick, !ban et !warn.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🎮 Commandes fun</h3>
+            <p>Ajoute de l’ambiance avec !ball, !de, !pileouface et !randommember.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>👋 Accueil automatique</h3>
+            <p>Bovi peut souhaiter la bienvenue, dire au revoir et donner un rôle automatiquement.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>📢 Pratique pour les admins</h3>
+            <p>Crée des annonces, des sondages et des messages propres directement avec Bovi.</p>
+        </div>
+    </div>
+</div>
     <div class="section" id="commandes">
         <h2>Commandes principales</h2>
 
