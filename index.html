@@ -72,12 +72,27 @@
         }
 
         .card {
-            background: #1b1b1b;
-            border: 1px solid #ff8a00;
-            border-radius: 12px;
-            padding: 25px;
-            width: 220px;
-        }
+    background: #1b1b1b;
+    border: 1px solid #ff8a00;
+    border-radius: 12px;
+    padding: 25px;
+    width: 260px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff8a00;
+}
+
+.card h3 {
+    color: #ff8a00;
+}
+
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
 
         .card h3 {
     color: #ff8a00;
@@ -171,30 +186,43 @@
     </div>
 </div>
     <div class="section" id="commandes">
-        <h2>Commandes principales</h2>
+    <h2>Commandes principales</h2>
 
-        <div class="cards">
-            <div class="card">
-                <h3>🛡️ Modération</h3>
-                <p>!clear, !kick, !ban, !warn</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <h3>⚙️ Base</h3>
+            <p>!ping | !aide</p>
+        </div>
 
-            <div class="card">
-                <h3>ℹ️ Informations</h3>
-                <p>!serverinfo, !userinfo, !avatar</p>
-            </div>
+        <div class="card">
+            <h3>ℹ️ Informations</h3>
+            <p>!serverinfo | !userinfo | !botinfo<br>
+            !avatar | !date | !uptime<br>
+            !members | !servericon</p>
+        </div>
 
-            <div class="card">
-                <h3>🎮 Fun</h3>
-                <p>!de, !ball, !pileouface</p>
-            </div>
+        <div class="card">
+            <h3>🎮 Fun</h3>
+            <p>!de | !pileouface | !ball<br>
+            !randommember</p>
+        </div>
 
-            <div class="card">
-                <h3>👋 Événements</h3>
-                <p>Bienvenue, au revoir, rôle auto</p>
-            </div>
+        <div class="card">
+            <h3>🛡️ Modération</h3>
+            <p>!clear | !kick | !ban<br>
+            !unban | !warn | !warnings</p>
+        </div>
+
+        <div class="card">
+            <h3>👑 Administrateurs</h3>
+            <p>!say | !poll | !announce</p>
+        </div>
+
+        <div class="card">
+            <h3>👋 Événements</h3>
+            <p>Bienvenue automatique<br>
+            Au revoir automatique<br>
+            Rôle automatique</p>
         </div>
     </div>
-
-</body>
-</html>
+</div>
