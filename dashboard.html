@@ -46,13 +46,14 @@
         color: white;
     }
 
-    .main {
-        margin-left: 250px;
-        min-height: 100vh;
-        background: radial-gradient(circle at top, #2b1200, #0b0b0b 55%);
-        padding: 40px;
-        box-sizing: border-box;
-    }
+        .main {
+            margin-left: 250px;
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #2b1200, #0b0b0b 55%);
+            padding: 40px 50px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
 
     .top {
         display: flex;
@@ -150,7 +151,7 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 22px;
             align-items: start;
         }
