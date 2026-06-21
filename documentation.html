@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation - Bovi</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: white;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, #2b1200, #0b0b0b 70%);
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin: 0;
+        color: #ff8a00;
+        letter-spacing: 3px;
+    }
+
+    .slogan {
+        font-size: 22px;
+        margin: 20px 0 35px;
+        color: #f5e6d0;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: white;
+        background: #ff8a00;
+        padding: 15px 25px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #ff3b1f;
+        transform: scale(1.05);
+    }
+
+    .section {
+        padding: 60px 20px;
+        background: #111;
+    }
+
+    .section h2 {
+        font-size: 36px;
+        color: #ff8a00;
+        margin-bottom: 15px;
+    }
+
+    .section-text {
+        color: #f5e6d0;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #1b1b1b;
+        border: 1px solid #ff8a00;
+        border-radius: 14px;
+        padding: 25px;
+        width: 280px;
+        transition: 0.2s;
+        text-align: left;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px #ff8a00;
+    }
+
+    .card h3 {
+        color: #ff8a00;
+        text-align: center;
+    }
+
+    .card p {
+        color: #ddd;
+        line-height: 1.6;
+    }
+
+    .card code {
+        color: #ff8a00;
+        font-weight: bold;
+    }
+
+    .footer {
+        background: #080808;
+        padding: 25px 20px;
+        border-top: 1px solid #ff8a00;
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .footer span {
+        color: #ff8a00;
+        font-weight: bold;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="hero">
+    <h1>DOCUMENTATION</h1>
+    <p class="slogan">Tout ce qu’il faut savoir pour utiliser Bovi.</p>
+
+    <div class="buttons">
+        <a class="btn" href="index.html">Accueil</a>
+        <a class="btn" href="https://discord.gg/WU2StEpNuw" target="_blank">Serveur support</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📚 Aide Bovi</h2>
+    <p class="section-text">Retrouve ici les bases pour comprendre et utiliser Bovi sur ton serveur Discord.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎫 Tickets</h3>
+            <p>
+                La commande <code>!ticketsetup</code> permet de créer un message avec un bouton.
+                Quand un membre clique dessus, Bovi crée un salon privé entre le membre et le staff.
+            </p>
+            <p>
+                Dans le ticket, le bouton <strong>Fermer le ticket</strong> permet de supprimer le salon quand le problème est réglé.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Modération</h3>
+            <p>
+                Les commandes de modération permettent de gérer le serveur plus facilement.
+            </p>
+            <p>
+                Commandes utiles : <code>!clear</code>, <code>!kick</code>, <code>!ban</code>, <code>!unban</code>, <code>!warn</code>, <code>!warnings</code>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👋 Bienvenue</h3>
+            <p>
+                Bovi peut souhaiter la bienvenue aux nouveaux membres, dire au revoir aux membres qui partent et donner un rôle automatiquement.
+            </p>
+            <p>
+                Vérifie que les salons <strong>bienvenue</strong> et <strong>au-revoir</strong> existent bien sur ton serveur.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Permissions</h3>
+            <p>
+                Si une commande ne marche pas, vérifie que Bovi a les bonnes permissions.
+            </p>
+            <p>
+                Pour les tickets, Bovi doit pouvoir gérer les salons, voir les salons, envoyer des messages et gérer les permissions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>❓ Bovi ne répond pas</h3>
+            <p>
+                Si Bovi ne répond pas, vérifie qu’il est bien en ligne et que tu utilises le bon préfixe.
+            </p>
+            <p>
+                Le préfixe actuel est <code>!</code>. Exemple : <code>!aide</code>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔗 Support</h3>
+            <p>
+                Si tu as besoin d’aide, tu peux rejoindre le serveur support de Bovi avec le bouton en haut de cette page.
+            </p>
+            <p>
+                Tu peux aussi consulter la page d’accueil pour voir les commandes principales.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2026 <span>Bovi</span> — Documentation officielle</p>
+</footer>
+```
+
+</body>
+</html>
