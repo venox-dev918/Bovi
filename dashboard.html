@@ -1,0 +1,293 @@
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: white;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        background: #080808;
+        border-right: 1px solid #ff8a00;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ff8a00;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        color: #f5e6d0;
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+    .nav a {
+        display: block;
+        color: #ddd;
+        text-decoration: none;
+        padding: 13px 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        transition: 0.2s;
+    }
+
+    .nav a:hover {
+        background: #ff8a00;
+        color: white;
+    }
+
+    .main {
+        margin-left: 250px;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #2b1200, #0b0b0b 55%);
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    h1 {
+        color: #ff8a00;
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .top p {
+        color: #f5e6d0;
+        font-size: 18px;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: white;
+        background: #ff8a00;
+        padding: 14px 22px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.2s;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background: #ff3b1f;
+        transform: scale(1.05);
+    }
+
+    .server-box {
+        background: #111;
+        border: 1px solid #ff8a00;
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 35px;
+        box-shadow: 0 0 20px rgba(255, 138, 0, 0.15);
+    }
+
+    .server-box h2 {
+        color: #ff8a00;
+        margin-top: 0;
+    }
+
+    .server-box p {
+        color: #ddd;
+        line-height: 1.6;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+    }
+
+    .card {
+        background: #1b1b1b;
+        border: 1px solid #ff8a00;
+        border-radius: 16px;
+        padding: 25px;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px #ff8a00;
+    }
+
+    .card h3 {
+        color: #ff8a00;
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .card p {
+        color: #ddd;
+        line-height: 1.6;
+    }
+
+    .status {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 20px;
+        background: rgba(255, 138, 0, 0.15);
+        color: #ff8a00;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .fake-button {
+        margin-top: 15px;
+        background: #ff8a00;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 10px;
+        font-weight: bold;
+        display: inline-block;
+        cursor: not-allowed;
+        opacity: 0.85;
+    }
+
+    .footer {
+        margin-top: 45px;
+        padding-top: 25px;
+        border-top: 1px solid #ff8a00;
+        color: #aaa;
+        text-align: center;
+    }
+
+    .footer span {
+        color: #ff8a00;
+        font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+        .sidebar {
+            position: static;
+            width: 100%;
+            height: auto;
+            border-right: none;
+            border-bottom: 1px solid #ff8a00;
+        }
+
+        .main {
+            margin-left: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 34px;
+        }
+    }
+</style>
+<div class="sidebar">
+    <div class="logo">BOVI</div>
+    <div class="subtitle">Dashboard officiel</div>
+
+    <div class="nav">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="documentation.html">📚 Documentation</a>
+        <a href="https://discord.gg/WU2StEpNuw" target="_blank">💬 Support</a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="top">
+        <div>
+            <h1>Dashboard Bovi</h1>
+            <p>Configure ton serveur Discord avec Bovi.</p>
+        </div>
+
+        <a class="btn" href="index.html">Retour au site</a>
+    </div>
+
+    <div class="server-box">
+        <h2>⚙️ Panel en préparation</h2>
+        <p>
+            Cette page est une première maquette du futur panel de Bovi.
+            Plus tard, tu pourras te connecter avec Discord, choisir ton serveur
+            et modifier les réglages directement depuis ce dashboard.
+        </p>
+        <p>
+            Pour l’instant, les réglages se font encore avec les commandes slash comme
+            <strong>/setwelcome</strong>, <strong>/setgoodbye</strong>, <strong>/setautorole</strong>,
+            <strong>/setticketcategory</strong> et <strong>/setstaffrole</strong>.
+        </p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <span class="status">Module disponible</span>
+            <h3>👋 Bienvenue / Au revoir</h3>
+            <p>
+                Choisis le salon de bienvenue, le salon d’au revoir et le rôle automatique
+                donné aux nouveaux membres.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+
+        <div class="card">
+            <span class="status">Module disponible</span>
+            <h3>🎫 Tickets</h3>
+            <p>
+                Configure la catégorie des tickets, le rôle staff et le système de fermeture
+                des tickets.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+
+        <div class="card">
+            <span class="status">Module actif</span>
+            <h3>🛡️ Modération</h3>
+            <p>
+                Gère les commandes de modération comme ban, kick, clear, warn et warnings.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+
+        <div class="card">
+            <span class="status">Module actif</span>
+            <h3>🎭 Rôles</h3>
+            <p>
+                Prépare les réglages liés aux rôles automatiques et aux permissions du bot.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+
+        <div class="card">
+            <span class="status">Module futur</span>
+            <h3>📊 Logs</h3>
+            <p>
+                Plus tard, Bovi pourra envoyer des logs pour les actions importantes du serveur.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+
+        <div class="card">
+            <span class="status">Module futur</span>
+            <h3>⚙️ Général</h3>
+            <p>
+                Change la couleur des embeds, le style du bot et les réglages généraux du serveur.
+            </p>
+            <div class="fake-button">Configurer bientôt</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 <span>Bovi</span> — Dashboard en développement</p>
+    </div>
+</div>
