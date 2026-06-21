@@ -201,6 +201,72 @@
         opacity: 0.85;
     }
 
+            .setting-list {
+            margin-top: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .setting-row {
+            background: #111;
+            border: 1px solid rgba(255, 138, 0, 0.35);
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .setting-row span {
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        .setting-row strong {
+            color: #ff8a00;
+            font-size: 14px;
+        }
+
+        .switch {
+            width: 46px;
+            height: 24px;
+            background: #333;
+            border-radius: 20px;
+            position: relative;
+            flex-shrink: 0;
+            border: 1px solid rgba(255, 138, 0, 0.4);
+        }
+
+        .switch::after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: #aaa;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            transition: 0.2s;
+        }
+
+        .switch.on {
+            background: rgba(255, 138, 0, 0.35);
+            border-color: #ff8a00;
+        }
+
+        .switch.on::after {
+            left: 23px;
+            background: #ff8a00;
+        }
+
+        .mini-note {
+            color: #aaa;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
     .footer {
         margin-top: 45px;
         padding-top: 25px;
@@ -282,65 +348,186 @@
             <a class="btn-disabled">Se connecter avec Discord</a>
         </div>
 
-    <div class="cards">
-        <div class="card">
-            <span class="status">Module disponible</span>
-            <h3>👋 Bienvenue / Au revoir</h3>
-            <p>
-                Choisis le salon de bienvenue, le salon d’au revoir et le rôle automatique
-                donné aux nouveaux membres.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
+<div class="cards">
+            <div class="card">
+                <span class="status">Module disponible</span>
+                <h3>👋 Bienvenue / Au revoir</h3>
+                <p>
+                    Configure les messages automatiques quand un membre rejoint ou quitte le serveur.
+                </p>
 
-        <div class="card">
-            <span class="status">Module disponible</span>
-            <h3>🎫 Tickets</h3>
-            <p>
-                Configure la catégorie des tickets, le rôle staff et le système de fermeture
-                des tickets.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Bienvenue</span>
+                        <div class="switch on"></div>
+                    </div>
 
-        <div class="card">
-            <span class="status">Module actif</span>
-            <h3>🛡️ Modération</h3>
-            <p>
-                Gère les commandes de modération comme ban, kick, clear, warn et warnings.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
+                    <div class="setting-row">
+                        <span>Salon bienvenue</span>
+                        <strong>À configurer</strong>
+                    </div>
 
-        <div class="card">
-            <span class="status">Module actif</span>
-            <h3>🎭 Rôles</h3>
-            <p>
-                Prépare les réglages liés aux rôles automatiques et aux permissions du bot.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
+                    <div class="setting-row">
+                        <span>Au revoir</span>
+                        <div class="switch on"></div>
+                    </div>
 
-        <div class="card">
-            <span class="status">Module futur</span>
-            <h3>📊 Logs</h3>
-            <p>
-                Plus tard, Bovi pourra envoyer des logs pour les actions importantes du serveur.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
+                    <div class="setting-row">
+                        <span>Salon au revoir</span>
+                        <strong>À configurer</strong>
+                    </div>
 
-        <div class="card">
-            <span class="status">Module futur</span>
-            <h3>⚙️ Général</h3>
-            <p>
-                Change la couleur des embeds, le style du bot et les réglages généraux du serveur.
-            </p>
-            <div class="fake-button">Configurer bientôt</div>
-        </div>
-    </div>
+                    <div class="setting-row">
+                        <span>Rôle automatique</span>
+                        <strong>À configurer</strong>
+                    </div>
+                </div>
 
-    <div class="footer">
-        <p>© 2026 <span>Bovi</span> — Dashboard en développement</p>
-    </div>
-</div>
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+
+            <div class="card">
+                <span class="status">Module disponible</span>
+                <h3>🎫 Tickets</h3>
+                <p>
+                    Gère le système de tickets privés entre les membres et le staff.
+                </p>
+
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Tickets</span>
+                        <div class="switch on"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Catégorie tickets</span>
+                        <strong>À configurer</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Rôle staff</span>
+                        <strong>À configurer</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Fermeture ticket</span>
+                        <strong>5 secondes</strong>
+                    </div>
+                </div>
+
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+
+            <div class="card">
+                <span class="status">Module actif</span>
+                <h3>🛡️ Modération</h3>
+                <p>
+                    Utilise les commandes de modération pour gérer ton serveur.
+                </p>
+
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Ban / Unban</span>
+                        <div class="switch on"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Kick</span>
+                        <div class="switch on"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Clear</span>
+                        <div class="switch on"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Warns sauvegardés</span>
+                        <strong>Activé</strong>
+                    </div>
+                </div>
+
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+
+            <div class="card">
+                <span class="status">Module actif</span>
+                <h3>🎭 Rôles</h3>
+                <p>
+                    Prépare les réglages liés aux rôles automatiques et aux permissions.
+                </p>
+
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Auto-rôle</span>
+                        <div class="switch on"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Rôle choisi</span>
+                        <strong>À configurer</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Permissions bot</span>
+                        <strong>À vérifier</strong>
+                    </div>
+                </div>
+
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+
+            <div class="card">
+                <span class="status">Module futur</span>
+                <h3>📊 Logs</h3>
+                <p>
+                    Plus tard, Bovi pourra envoyer des logs pour les actions importantes.
+                </p>
+
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Logs modération</span>
+                        <div class="switch"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Logs tickets</span>
+                        <div class="switch"></div>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Salon logs</span>
+                        <strong>Bientôt</strong>
+                    </div>
+                </div>
+
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+
+            <div class="card">
+                <span class="status">Module futur</span>
+                <h3>⚙️ Général</h3>
+                <p>
+                    Règle les options générales de Bovi pour ton serveur.
+                </p>
+
+                <div class="setting-list">
+                    <div class="setting-row">
+                        <span>Couleur embeds</span>
+                        <strong>Orange</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Commandes slash</span>
+                        <strong>Activées</strong>
+                    </div>
+
+                    <div class="setting-row">
+                        <span>Langue</span>
+                        <strong>Français</strong>
+                    </div>
+                </div>
+
+                <div class="fake-button">Configurer bientôt</div>
+            </div>
+        </div>
