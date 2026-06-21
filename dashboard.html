@@ -109,6 +109,45 @@
         line-height: 1.6;
     }
 
+            .panel-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .info-item {
+            background: #1b1b1b;
+            border: 1px solid rgba(255, 138, 0, 0.6);
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .info-item span {
+            display: block;
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .info-item strong {
+            color: #ff8a00;
+            font-size: 16px;
+        }
+
+        .btn-disabled {
+            text-decoration: none;
+            color: white;
+            background: #ff8a00;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
