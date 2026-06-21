@@ -151,7 +151,7 @@
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(6, 1fr);
         gap: 18px;
         align-items: stretch;
     }
@@ -165,6 +165,15 @@
         min-width: 0;
         height: 100%;
         box-sizing: border-box;
+        grid-column: span 2;
+    }
+
+    .card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .card:nth-child(5) {
+        grid-column: 4 / span 2;
     }
 
     .card:hover {
@@ -306,7 +315,12 @@
             .cards {
                 grid-template-columns: 1fr;
             }
+
+            .card {
+                grid-column: auto;
+            }
         }
+    
 </style>
 
 <div class="sidebar">
@@ -427,38 +441,6 @@
                     <div class="setting-row">
                         <span>Délai avant fermeture</span>
                         <strong>5 secondes</strong>
-                    </div>
-                </div>
-
-                <div class="fake-button">Configurer bientôt</div>
-            </div>
-
-            <div class="card">
-                <span class="status">Module actif</span>
-                <h3>🛡️ Modération</h3>
-                <p>
-                    Utilise les commandes de modération pour gérer ton serveur.
-                </p>
-
-                <div class="setting-list">
-                    <div class="setting-row">
-                        <span>Ban / Unban</span>
-                        <div class="switch on"></div>
-                    </div>
-
-                    <div class="setting-row">
-                        <span>Kick</span>
-                        <div class="switch on"></div>
-                    </div>
-
-                    <div class="setting-row">
-                        <span>Clear</span>
-                        <div class="switch on"></div>
-                    </div>
-
-                    <div class="setting-row">
-                        <span>Warns sauvegardés</span>
-                        <strong>Activé</strong>
                     </div>
                 </div>
 
