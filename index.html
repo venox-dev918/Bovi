@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <title>Bovi - Bot Discord</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    
+
     <style>
         :root {
-            --bg-main: #6b4120;
-            --bg-dark: #5c310f;
+            --bg-center: #6b4120;
+            --bg-mid: #4a260d;
+            --bg-edge: #1f0f05;
+
             --orange-bovi: #d96b1c;
             --orange-soft: #f08a24;
-            --cream: #fff1df;
+
             --text: #fff7ef;
-        } 
+            --cream: #fff1df;
+        }
 
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, var(--bg-main), var(--bg-dark));
+            background: #1f0f05;
             color: var(--text);
             text-align: center;
         }
@@ -29,7 +32,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, #8a4f22, var(--bg-main) 45%, var(--bg-dark) 90%);
+
+            background:
+                radial-gradient(circle at center,
+                    #6b4120 0%,
+                    #4a260d 42%,
+                    #2b1406 72%,
+                    #140903 100%
+                );
+
             padding: 20px;
         }
 
@@ -40,6 +51,11 @@
             letter-spacing: 4px;
         }
 
+        p {
+            font-size: 26px;
+            color: var(--cream);
+        }
+        
         .slogan {
             font-size: 24px;
             margin: 20px 0 40px;
@@ -56,16 +72,19 @@
         .btn {
             text-decoration: none;
             color: white;
-            background: #ff8a00;
+            background: linear-gradient(135deg, #b85a18, #d96b1c);
             padding: 15px 25px;
             border-radius: 10px;
             font-weight: bold;
             transition: 0.2s;
+            box-shadow: 0 0 16px rgba(217, 107, 28, 0.22);
+            border: 1px solid rgba(255, 241, 223, 0.12);
         }
 
         .btn:hover {
-            background: #ff3b1f;
-            transform: scale(1.05);
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #d96b1c, #f08a24);
+            box-shadow: 0 0 22px rgba(217, 107, 28, 0.35);
         }
 
         .section {
