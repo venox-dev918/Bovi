@@ -6,11 +6,20 @@
     <link rel="icon" type="image/png" href="favicon.png">
     
     <style>
+        :root {
+            --bg-main: #6b4120;
+            --bg-dark: #5c310f;
+            --orange-bovi: #d96b1c;
+            --orange-soft: #f08a24;
+            --cream: #fff1df;
+            --text: #fff7ef;
+        } 
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0b0b0b;
-            color: white;
+            background: linear-gradient(135deg, var(--bg-main), var(--bg-dark));
+            color: var(--text);
             text-align: center;
         }
 
@@ -20,14 +29,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, #2b1200, #0b0b0b 70%);
+            background: radial-gradient(circle, #8a4f22, var(--bg-main) 45%, var(--bg-dark) 90%);
             padding: 20px;
         }
 
         h1 {
             font-size: 80px;
             margin: 0;
-            color: #ff8a00;
+            color: var(--orange-bovi);
             letter-spacing: 4px;
         }
 
