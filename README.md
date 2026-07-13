@@ -54,7 +54,7 @@ https://venox-dev918.github.io/Bovi/
 
 ## 📌 État du projet
 
-Bovi est actuellement fonctionel.
+Bovi est actuellement fonctionnel.
 
 ---
 
